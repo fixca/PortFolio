@@ -11,10 +11,10 @@ body {
     border-radius: 1px;
 }
 
-#sidebar {
+#slidebar {
     will-change: min-height;
 }
 
-.sidebar__inner{
+.slidebar__inner{
     transform: translate(0, 0);
 }
