@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
+body {
+    font-family: 'Bakbak One', cursive;
+    width: max-content;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+#mainWrapper {
+    border-radius: 1px;
+}
+
+#sidebar {
+    will-change: min-height;
+}
+
+.sidebar__inner{
+    transform: translate(0, 0);
+}
