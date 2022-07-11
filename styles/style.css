@@ -2,19 +2,47 @@
 
 body {
     font-family: 'Bakbak One', cursive;
-    width: max-content;
+    /* width: max-content; */
     margin: 0 auto;
     background-color: antiquewhite;
 }
 
 #mainWrapper {
-    border-radius: 1px;
+    width: auto;
+    text-align: center;
 }
 
-#slidebar {
-    will-change: min-height;
+#projectListWrapper {
+
+    height: 20em;
+    /* background-color: aqua; */
+
+    /* https://bryan7.tistory.com/283 */
+    display: table-cell;
+    vertical-align: middle;
+
+    /* https://poiemaweb.com/css3-centering */
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    /*요소의 높이/너비의 반(50%)만큼 위/왼쪽으로 이동*/
+    transform: translate(-50%, 0%);
 }
 
-.slidebar__inner{
-    transform: translate(0, 0);
+#projectElement {
+    width: 50em;
+    height: 10em;
+    background-color: pink;
+    border-radius: 10px;
+}
+
+.imageWrapper {
+    width: 10em;
+    height: 10em;
+    float: left;
+}
+
+.noTextDeco {
+    text-decoration: none;
+    color: black;
 }

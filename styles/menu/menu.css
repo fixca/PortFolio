@@ -1,3 +1,14 @@
 #id {
     border-radius: 1px;
 }
+
+.slidebarDiv{
+    position: sticky;
+    top: 50%;
+    background-color: greenyellow;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 20px;
+    margin-left: 4em;
+    text-align: center;
+}
