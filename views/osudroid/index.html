@@ -5,32 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortFolio</title>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script src="/scripts/menu/jquery.sticky-sidebar.js"></script>
-    <link rel="stylesheet" href="styles/menu/menu.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <script type="text/javascript">
-		var stickySidebar = new StickySidebar('#slidebar', {
-			topSpacing: 20,
-			bottomSpacing: 20,
-			containerSelector: '#mainWrapper',
-            innerWrapperSelector: '.slidebar__inner'
-		});
-	
-    </script>
+    <link rel="stylesheet" href="../../styles/menu/menu.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+
+    <!-- Load the element definition -->
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
 </head>
 <body>
-    <h1>Ranked Osu!droid</h1>
-    <p>Ranked Osu!droid is inspired by Maid Bot system in Osu!.</p>
-    <p>I just wonder what will happen if I make this for Osu!droid.</p>
-    <p>Since Osu!droid was open-source, I could fork the source and make a custom client.</p>
+    <div class="slidebarDiv">
+        <ul>
+            All projects
+            <a href="" class="noTextDeco"><li>R.osu!droid</li></a>
+            <a href="" class="noTextDeco"><li>TeamCocoa</li></a>
+        </ul>
+    </div>
     <div id="mainWrapper">
-        <div id="slidebar" class="sidebar">
-            <div class="slidebar__inner">
-                a
-            </div>
-        </div>
+        <!-- Simply set the `src` attribute to your MD file and win -->
+        <zero-md src="osudroid.md"></zero-md>
     </div>
 </body>
 </html>
